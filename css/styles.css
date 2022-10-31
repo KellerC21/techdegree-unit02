@@ -11,6 +11,13 @@ body {
 
   /* Section Styles */
 
+  .card{
+    width: 20%;
+    position: relative;
+    text-align: center;
+
+  }
+
 .main-nav {
     width: 100%;
     background: rgb(67, 239, 245);
@@ -62,3 +69,4 @@ body {
   }
  
 }
+
