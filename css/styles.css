@@ -2,20 +2,47 @@
 
 *{
  box-sizing: border-box;
+ margin: 10px;
+ padding: 1px;
 }
 
 .main-nav{
-    font-size: 20px;
-    flex-direction: column;
+    display:flex;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-    background-color: cornflowerblue;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #6bd6fa;
+}
+
+.name{
+    text-align: left;
 }
 
 /* ----- Header Styles ----- */
 
+.main-header{
+    dispaly: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+}
 
+h1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
+.profile-picture{
+    max-width: 100%;
+    align-items: center;
+}
+
+.tag-bio{
+    font-size: 20px;
+    text-align: center;
+}
 
 
 
@@ -23,6 +50,11 @@
 
 
 /* ----- Section Styles ----- */
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     max-width: 1100px;
@@ -32,34 +64,49 @@
   }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 10px;
     min-height: 250px;
     color: rgb(1, 14, 39);
     text-align: center;
     letter-spacing: 1px;
     padding-top: 5px;
-    text-align: center;   
+    background-color: bisque;   
 }
 
-.project img { 
+#portfolio{
+    text-align: center;
+    min-height: 250px;
+}
+
+.portfolio-1,
+.portfolio-2,
+.portfolio-3,
+.portfolio-4,
+.portfolio-5,
+.portfolio-6 {
     max-width: 100%;
 }
 
-.profile picture {
-    width: 100%;
-
+.skills{
+    max-width: 75%;
+    box-align: center;
 }
 
-.protfolio-1,
-.protfolio-2,
-.protfolio-3,
-.protfolio-4,
-.protfolio-5,
-.protfolio-6 {
-    max-width: 100%;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    min-height: 250px;
+    color: rgb(1, 14, 39);
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    background-color: bisque;   
 }
-
-
 
 /* ----- Footer ----- */
 
