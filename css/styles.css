@@ -24,14 +24,25 @@
 
 /* ----- Section Styles ----- */
 
-.project {
-    text-align: center;
+.container {
+    max-width: 1100px;
     padding: 10px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.project {
     margin: 10px;
+    min-height: 250px;
+    color: rgb(1, 14, 39);
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    text-align: center;   
 }
 
 .project img { 
-    width: 100%;
+    max-width: 100%;
 }
 
 .profile picture {
@@ -39,7 +50,25 @@
 
 }
 
+.protfolio-1,
+.protfolio-2,
+.protfolio-3,
+.protfolio-4,
+.protfolio-5,
+.protfolio-6 {
+    max-width: 100%;
+}
+
 
 
 /* ----- Footer ----- */
 
+footer {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #f4f7f8;
+  }
