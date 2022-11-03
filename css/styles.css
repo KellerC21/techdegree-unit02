@@ -25,7 +25,7 @@
 /* ----- Header Styles ----- */
 
 .main-header{
-    dispaly: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: inherit;
 }
@@ -40,16 +40,6 @@ h1{
     max-width: 100%;
     align-items: center;
 }
-
-.tag-bio{
-    font-size: 20px;
-    text-align: center;
-}
-
-
-
-
-
 
 /* ----- Section Styles ----- */
 
@@ -89,7 +79,6 @@ a{
 #portfolio{
     text-align: center;
     min-height: 250px;
-    margin-bottom: none;
 }
 
 .portfolio-1,
