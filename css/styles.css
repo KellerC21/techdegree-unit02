@@ -9,18 +9,27 @@
 .top-nav{
     display:flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: auto;
+    width: auto;
+    margin-top: 30px;
     padding: 0 20px;
-    height: 100px;
     background-color: #6bd6fa;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
 .name{
     text-align: left;
-    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 /* ----- Header Styles ----- */
@@ -43,7 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 320px;
+    max-width: 1024px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
@@ -88,9 +97,13 @@ a{
 
 .skills{
     max-width: 75%;
-    align-items: center;
+    text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+}
+
+li {
+  text-align: center;
 }
 
 
@@ -120,7 +133,6 @@ footer {
     
     .profile-picture {
         max-width: 50%;
-        align-items: right;
     }
 
     .container {
@@ -134,13 +146,13 @@ footer {
 
     .top-nav {
         margin-top: 0;
+        width: 100%;
       }
     
       .top-nav li {
         display: inline-block;
         width: auto;
         margin-right: 15px;
-        background-color: teal;
         color: white;
       }
     
@@ -177,32 +189,30 @@ footer {
         margin-left: 2em;
       }
 
+      .full {
+        display: inline-block;
+        padding: 0 20px;
+      }
+
   }
 
   @media (min-width: 1024px) {
 
-    .main-nav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-    }
-    
-    .project {
+  .project {
         flex-basis: calc(33.333% - 20px);
     }
 
     nav {
       display: flex;
       justify-content: space-between;
-      flex-direction: row;
     }
   
     .top-nav, 
     .top-nav li {
-      width: initial;
-      margin-bottom: 0;
+      width: 100%;
+      margin-bottom: 0
     }
-
+  
     body{
         display: flex;
         flex-direction: column;
@@ -211,4 +221,9 @@ footer {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
     }
+
+    li {
+      text-align: center;
+    }
+    
   }
