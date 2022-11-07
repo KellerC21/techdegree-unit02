@@ -18,6 +18,8 @@
 }
 
 .top-nav li {
+  display: flex;
+  flex-direction: column;
   padding: 10px 0;
   margin: 5px auto;
 }
@@ -83,7 +85,7 @@ a{
 
 #portfolio{
     text-align: center;
-    min-height: 250px;
+    min-height: 5px;
 }
 
 .portfolio-1,
@@ -102,7 +104,9 @@ a{
     font-weight: 300;
 }
 
-li {
+.skills li {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -119,6 +123,10 @@ footer {
     background-color: #f4f7f8;
     font-family: 'Lato', sans-serif;
     font-weight: 300;   
+  }
+
+  .full{
+    display: none;
   }
 
   /* ----- Media Queries ----- */
@@ -169,6 +177,10 @@ footer {
         font-weight: 300;
     }
 
+      .skills li {
+        text-align: center;
+      } 
+
     footer {
         display:flex;
         justify-content: space-around;
@@ -192,6 +204,10 @@ footer {
       .full {
         display: inline-block;
         padding: 0 20px;
+      }
+
+      .top {
+        display: none;
       }
 
   }
@@ -222,7 +238,9 @@ footer {
         font-weight: 300;
     }
 
-    li {
+    .skills li {
+      display: flex;
+      flex-direction: column;
       text-align: center;
     }
     
