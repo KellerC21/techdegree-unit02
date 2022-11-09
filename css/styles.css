@@ -2,26 +2,20 @@
 
 *{
  box-sizing: border-box;
- margin: 0;
+ margin: 5px;
  padding: 0;
 }
 
 .top-nav{
     display:flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: space-around;
-    width: auto;
     margin-top: 30px;
     padding: 0 20px;
     background-color: #6bd6fa;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-}
-
-.top-nav li {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0;
-  margin: 5px auto;
 }
 
 .top-nav a {
@@ -46,6 +40,7 @@
 .profile-picture{
     max-width: 100%;
     align-items: center;
+    padding: 20px 20px;
 }
 
 /* ----- Section Styles ----- */
@@ -163,15 +158,17 @@ footer {
         width: 100%;
       }
     
+      .top-nav, 
       .top-nav li {
-        display: inline-block;
-        width: auto;
-        margin-right: 15px;
-        color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+       
       }
-    
-      .top-nav li:last-child {
-        margin-right: 0;
+  
+      p {
+        margin: auto;
       }
 
       body{
@@ -226,15 +223,21 @@ footer {
 
     nav {
       display: flex;
-      text-decoration: center;
+      flex-direction: row;
       justify-content: space-between;
     }
   
     .top-nav, 
     .top-nav li {
+      display: flex;
+      flex-direction: row;
       width: 100%;
-      margin: .5cm auto;
-      text-align: center;
+      margin: auto;
+      text-align: justify;
+    }
+
+    p {
+      margin: auto;
     }
   
     body{
